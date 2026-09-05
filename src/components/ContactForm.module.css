@@ -1,0 +1,64 @@
+.contactFormConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    gap: 3px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.labelForm {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    gap: 5px;
+}
+
+.labelForm > input {
+    width: 50vw;
+    font-size: 30px;
+    color: black;
+    opacity: 0.5;
+    border: none;
+    transition: all 0.3s ease;            
+}
+
+.labelForm > input::placeholder {
+    color: #2B2B2B;
+    font-size: 30px;
+}
+
+.labelForm > input:focus {
+    color: #F2A03D;
+    opacity: 1;
+    border-radius: 5px;
+    outline: 3px solid #D94F2B;
+    background-color: #2B2B2B;
+}
+
+.buttonForm {
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(26, 17, 16, 0.9);
+    transition: border-radius 0.3s, background-color 1.0s;
+    cursor: pointer;
+    color: #F7F5E6;
+}
+
+.buttonForm:hover {
+    border-radius: 100px;
+    background: none;
+    background-color: #D94F2B;
+    color: #2B2B2B;
+}
+

@@ -1,0 +1,21 @@
+.inputSearch {
+    width: 50vw;
+    font-size: 30px;
+    color: black;
+    opacity: 0.5;
+    border: none;
+    transition: all 0.3s ease;            
+}
+
+.inputSearch::placeholder {
+    color: #2B2B2B;
+    font-size: 30px;
+}
+
+.inputSearch:focus {
+    color: #F2A03D;
+    opacity: 1;
+    border-radius: 5px;
+    outline: 3px solid #D94F2B;
+    background-color: #2B2B2B;
+}

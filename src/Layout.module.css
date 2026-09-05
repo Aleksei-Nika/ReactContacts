@@ -1,0 +1,24 @@
+.headerPanel {
+    width: 100vw;
+    height: 7vh;
+    background: linear-gradient(#D94F2B 90%, #2B2B2B);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navPanel {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+
+.linkPanel {
+    font-size: 20px;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.mainConteiner {
+    flex: 1
+}

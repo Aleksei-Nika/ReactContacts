@@ -1,0 +1,44 @@
+.titleConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 65vh;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+.conteinerButton {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 25vw;
+    height: 20vh;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 170px;
+    height: 75px;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(26, 17, 16, 0.9);
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #F7F5E6;
+}
+
+.button:hover {
+    border-radius: 100px;
+    background: none;
+    background-color: #D94F2B;
+    color: #2B2B2B;
+}

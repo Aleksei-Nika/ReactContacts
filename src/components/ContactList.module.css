@@ -1,0 +1,58 @@
+.PageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    gap: 1vh;
+    margin-top: 3vh;
+}
+
+.ContactListContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60vw;
+    overflow-y: auto;
+    gap: 2px;
+    
+}
+
+.contactBlock {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 3fr 1fr;
+    border-bottom: solid 2px transparent;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contactBlock:hover{
+    border-bottom: solid 2px ;
+}
+
+.contactName {
+    font-size: 30px;
+}
+
+.contactNumber {
+    font-size: 30px;
+}
+
+.contactButton {
+    font-size: 20px;
+    height: 50%;
+    border-radius: 0;
+    border: none;
+    background-color: rgba(26, 17, 16, 0.9);
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #F7F5E6
+}
+
+.contactButton:hover {
+    border-radius: 100px;
+    background: none;
+    background-color: #D94F2B;
+    color: #2B2B2B;
+}
