@@ -1,16 +1,62 @@
-# React + Vite
+# 📱 ReactContacts приложение "Контакты"
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+SPA-приложение для управления списком контактов с сохранением данных в localStorage.
 
-Currently, two official plugins are available:
+## 📋 Описание проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Учебный проект представляет собой одностраничное приложение (SPA) для хранения и управления контактами. Реализован с использованием React, React Router и useReducer для управления состоянием. Данные сохраняются в localStorage браузера для персистентности.
 
-## React Compiler
+## 🛠 Технологии
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — библиотека для построения пользовательских интерфейсов
+- **React Router v6** — маршрутизация в приложении
+- **CSS Modules** — изолированные стили для компонентов
+- **useReducer** — управление состоянием приложения
+- **localStorage** — сохранение данных на стороне клиента
 
-## Expanding the Oxlint configuration
+## ✨ Функциональные возможности
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 📌 Главная страница (/)
+- Приветствие и описание приложения
+- Отображение общего количества контактов
+- Кнопки быстрого перехода к списку и добавлению контактов
+- Визуальный индикатор заполненности базы контактов
+
+### 📋 Список контактов (/contacts)
+- Отображение всех сохраненных контактов
+- **Динамический поиск** по имени контакта (без учета регистра)
+- Удаление контакта по кнопке
+- Автоматическая фильтрация при вводе текста в поиске
+
+### ➕ Добавление контакта (/add-contact)
+- Форма с полями: Имя, Номер телефона
+- **Валидация** на заполненность полей
+- Визуальная подсветка полей с ошибками
+- Автоматический редирект на страницу списка после успешного добавления
+
+### 🧭 Навигация
+- Постоянное меню на всех страницах
+- Подсветка активного раздела
+- Плавные переходы между страницами
+
+## 🎨 Стилизация
+
+- **CSS Modules** — все компоненты имеют изолированные стили
+- **Единая цветовая схема**: 
+  - Основной фон: `#2B2B2B`
+  - Акцентный цвет: `#D94F2B`
+  - Цвет текста: `#F2A03D`
+- **Анимации** — плавные переходы при наведении на кнопки и элементы
+- **Инлайн-стили** для динамического изменения UI:
+  - Подсветка полей формы при ошибках валидации
+  - Индикатор заполненности списка контактов
+
+## 🧠 Управление состоянием
+
+Используется **useReducer** в корневом компоненте App:
+
+```javascript
+// Доступные экшены
+{ type: 'ADD_CONTACT', payload: contact }
+{ type: 'DELETE_CONTACT', payload: contactId }
+```
